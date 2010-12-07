@@ -1,0 +1,16 @@
+Notes on Drupify. analysis of its constituent parts
+
+colors:
+ menu buttons           7ea702 (medium yellow green)
+                        c9ef50 (pale yellow green)
+arrow buttons are on transparent background (not so great for IE) besides which they are a bit dorky              
+                                 
+background is a gradient smoky blue 5973a4 (dark) to accbfd (light)-- could reuse the gif or change its color (keeping gradient) using color replace in photoshop.       
+
+header background also a gradient -- do we want to change the background of the new GWL logo to a gradient?
+                             
+footer is kind of cool. left and right images specify the rounded edges of actual footer and its apparent shadow. 
+                             
+                             
+framework: doesn't use grid system -- page is slightly smaller than 960. 
+   main node takes up 11 grid. right column the remaining 5.
