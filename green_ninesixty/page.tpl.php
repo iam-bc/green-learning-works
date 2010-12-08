@@ -18,8 +18,14 @@
      
     <div id="site-header" class="clear-block">
       <div id="branding" class="grid-16 clear-block">
-
-   <!-- removed site name, logo, and slogan from branding -->
+       <div id="imagesforheader" class="column grid-8 prefix-1">print images here...define new content type to make this easier for client?</div>
+           <div id="mission" class="column grid-6 push-1 clear-block">
+                print service links above  mission statement about 100px?
+                <br/><br/><br/>
+                <br/><br/><br/>
+                <?php print variable_get('site_mission', '');?>
+            </div>
+   <!-- removed site name, logo, and slogan from branding, inserted mission to print over logo-->
      
       </div>
 
@@ -43,7 +49,7 @@
     </div>
 
 
-    <div id="main" class="column <?php print ns('grid-16', $left, 4, $right, 3) . ' ' . ns('push-4', !$left, 4); ?>">
+    <div id="main" class="column <?php print ns('grid-16', $left, 4, $right, 5) . ' ' . ns('push-3', !$left, 4); ?>">
       <?php print $breadcrumb; ?>
       <?php if ($title): ?>
         <h1 class="title" id="page-title"><?php print $title; ?></h1>
@@ -62,13 +68,13 @@
     </div>
 
   <?php if ($left): ?>
-    <div id="sidebar-left" class="column sidebar region grid-4 <?php print ns('pull-12', $right, 3); ?>">
+    <div id="sidebar-left" class="column sidebar region grid-3 <?php print ns('pull-12', $right, 3); ?>">
       <?php print $left; ?>
     </div>
   <?php endif; ?>
 
   <?php if ($right): ?>
-    <div id="sidebar-right" class="column sidebar region grid-3">
+    <div id="sidebar-right" class="column sidebar region grid-4">
       <?php print $right; ?>
     </div>
   <?php endif; ?>
