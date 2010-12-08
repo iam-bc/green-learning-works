@@ -7,8 +7,6 @@ h1#site-name {
   margin-bottom: 1em;
 }
 
-
-#site-subheader,
 #footer-region,
 .column,
 .node,
@@ -32,9 +30,15 @@ h1#site-name {
 		padding-top: 5px;}
 
 #mission {padding-top: 30px;}		
-			
+
+	
+#sidebar-left	{padding-top:1.75em;
+		padding-bottom: 10em;
+		background-image: url(../images/subbanner2.jpg);}
 
 #page {background-color:#fff;}
+
+#main {padding-top: 1em;}
 
 /*
 ** Formatting for administration page
