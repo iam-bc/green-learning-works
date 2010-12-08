@@ -1,0 +1,20 @@
+NOTES on color & design ideas
+
+GWL banner/logo darker green: 2abd5b
+yellowish green: a6dd6e
+greenish yellow: d5ef78
+text: 1eba5a
+grey: 6d6e70
+____
+
+iowa green energy site
+olive green bg: 404d18
+footer: 667927
+menu: 91b036
+
+___
+
+discover learning site.  all done with tables! how strange.
+
+___
+
