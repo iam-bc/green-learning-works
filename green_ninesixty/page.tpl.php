@@ -12,28 +12,17 @@
   <?php print $scripts; ?>
 </head>
 
-<body class="<?php print $body_classes; ?> show-grid">
+<body>
+   <!-- class="<?php print $body_classes; ?> show-grid" -->
   <div id="page" class="container-16 clear-block">
-
+     
     <div id="site-header" class="clear-block">
-      <div id="branding" class="grid-4 clear-block">
-      <?php if ($linked_logo_img): ?>
-        <span id="logo" class="grid-1 alpha"><?php print $linked_logo_img; ?></span>
-      <?php endif; ?>
-      <?php if ($linked_site_name): ?>
-        <h1 id="site-name" class="grid-3 omega"><?php print $linked_site_name; ?></h1>
-      <?php endif; ?>
-      <?php if ($site_slogan): ?>
-        <div id="site-slogan" class="grid-3 omega"><?php print $site_slogan; ?></div>
-      <?php endif; ?>
+      <div id="branding" class="grid-16 clear-block">
+
+   <!-- removed site name, logo, and slogan from branding -->
+     
       </div>
 
-    <?php if ($main_menu_links || $secondary_menu_links): ?>
-      <div id="site-menu" class="grid-12">
-        <?php print $main_menu_links; ?>
-        <?php print $secondary_menu_links; ?>
-      </div>
-    <?php endif; ?>
 
     <?php if ($search_box): ?>
       <div id="search-box" class="grid-6 prefix-10"><?php print $search_box; ?></div>
@@ -42,11 +31,9 @@
 
 
     <div id="site-subheader" class="prefix-1 suffix-1 clear-block">
-    <?php if ($mission): ?>
-      <div id="mission" class="<?php print ns('grid-14', $header, 7); ?>">
-        <?php print $mission; ?>
-      </div>
-    <?php endif; ?>
+         <div id="links"> <?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?></div> 
+            <!-- links added to header -->
+
 
     <?php if ($header): ?>
       <div id="header-region" class="region <?php print ns('grid-14', $mission, 7); ?> clear-block">
@@ -67,7 +54,7 @@
       <?php print $messages; ?>
       <?php print $help; ?>
 
-      <div id="main-content" class="region clear-block">
+      <div id="main-content" class="region clear-block prefix-1">
         <?php print $content; ?>
       </div>
 
@@ -87,18 +74,13 @@
   <?php endif; ?>
 
 
-  <div id="footer" class="prefix-1 suffix-1">
-    <?php if ($footer): ?>
-      <div id="footer-region" class="region grid-14 clear-block">
-        <?php print $footer; ?>
-      </div>
-    <?php endif; ?>
-
-    <?php if ($footer_message): ?>
-      <div id="footer-message" class="grid-14">
-        <?php print $footer_message; ?>
-      </div>
-    <?php endif; ?>
+  <div id="footer" class="region clear-block grid-16">
+   
+    
+        <span class="grid-4"><?php print $footer; ?></span>
+        <span class="grid-4 push-9"><?php print $footer_message; ?></span>
+     
+  
   </div>
 
 
