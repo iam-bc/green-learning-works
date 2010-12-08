@@ -18,13 +18,20 @@ h1#site-name {
 }
 
 #branding {height: 280px; 
-	background-image: url(../images/green_ninesixty_logo.jpg);}
+	background: url(../images/green_ninesixty_logo.jpg) no-repeat;}
 
+#imagesforheader {height: 100px; 
+	border: 2px solid #999;
+	 margin-top: 170px; 
+	background-image:url(../images/littleimagesforbanner.jpg);}	
+	
 #site-subheader, #footer {
 	background-image: url(../images/subbanner.png);}
 
 #site-subheader {height: 30px; 
 		padding-top: 5px;}
+
+#mission {padding-top: 30px;}		
 			
 
 #page {background-color:#fff;}
