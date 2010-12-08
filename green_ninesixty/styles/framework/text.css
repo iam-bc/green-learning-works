@@ -88,7 +88,7 @@ fieldset {
 
 
 a:link,
-a:visited {
+a:visited, #mission {
 	/* color = dark brown */
 	color:#574500;
 	text-decoration: none;
@@ -98,3 +98,7 @@ a:hover {
 	text-decoration: underline;
 	color:#404d18;
 }
+
+/* misc text
+----------------------------------------------------------------------------------------------------*/
+
