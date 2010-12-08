@@ -11,6 +11,7 @@ h1#site-name {
 .column,
 .node,
 .comment,
+#main-content
  {
   margin-bottom: 1.5em;
 }
@@ -38,7 +39,9 @@ h1#site-name {
 
 #page {background-color:#fff;}
 
-#main {padding-top: 1em; background-color:#fff;}
+#main {padding-top: 1em; 
+	background-color:#fff; 
+	text-align: justify;}
 
 /*
 ** Formatting for administration page
