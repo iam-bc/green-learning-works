@@ -18,7 +18,8 @@
      
     <div id="site-header" class="clear-block">
       <div id="branding" class="grid-16 clear-block">
-       <div id="imagesforheader" class="column grid-8 prefix-1">print images here...define new content type to make this easier for client?</div>
+       <div id="imagesforheader" class="column grid-8 prefix-1"></div>
+       <!--images for header: define new content type to make this easier for client? or use random image print? -->
            <div id="mission" class="column grid-6 push-1 clear-block">
                 print service links above  mission statement about 100px?
                 <br/><br/><br/>
@@ -49,8 +50,8 @@
     </div>
 
 
-    <div id="main" class="column <?php print ns('grid-16', $left, 4, $right, 5) . ' ' . ns('push-3', !$left, 4); ?>">
-      <?php print $breadcrumb; ?>
+    <div id="main" class="column <?php print ns('grid-16', $left, 5, $right, 3) . ' ' . ns('push-5', !$left, 5); ?>">
+    <!--  <?php print $breadcrumb; ?> -->
       <?php if ($title): ?>
         <h1 class="title" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
@@ -60,7 +61,7 @@
       <?php print $messages; ?>
       <?php print $help; ?>
 
-      <div id="main-content" class="region clear-block prefix-1">
+      <div id="main-content" class="region clear-block prefix-1 suffix-1">
         <?php print $content; ?>
       </div>
 
@@ -68,13 +69,13 @@
     </div>
 
   <?php if ($left): ?>
-    <div id="sidebar-left" class="column sidebar region grid-3 <?php print ns('pull-12', $right, 3); ?>">
+    <div id="sidebar-left" class="alpha column sidebar region grid-3 prefix-1 suffix-1 <?php print ns('pull-11', $right, 3); ?>">
       <?php print $left; ?>
     </div>
   <?php endif; ?>
 
   <?php if ($right): ?>
-    <div id="sidebar-right" class="column sidebar region grid-4">
+    <div id="sidebar-right" class="column sidebar region grid-3">
       <?php print $right; ?>
     </div>
   <?php endif; ?>
