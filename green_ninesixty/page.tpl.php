@@ -81,9 +81,9 @@
   <?php endif; ?>
 
 
-  <div id="footer" class="region clear-block grid-16">
+  <div id="footer" class="clear-block grid-16 suffix-1 alpha">
    
-    
+    <br/>
         <span class="grid-4"><?php print $footer; ?></span>
         <span class="grid-4 push-9"><?php print $footer_message; ?></span>
      

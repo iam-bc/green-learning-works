@@ -36,34 +36,34 @@ h1 {
 }
 
 h2 {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 h3 {
-  font-size: 21px;
-}
-
-h4 {
   font-size: 19px;
 }
 
-h5 {
+h4 {
   font-size: 17px;
 }
 
-h6 {
+h5 {
   font-size: 15px;
+}
+
+h6 {
+  font-size: 14px;
 }
 
 /* `Spacing
 ----------------------------------------------------------------------------------------------------*/
 
 ol {
-  list-style: decimal;
+  list-style: none;
 }
 
 ul {
-  list-style: square;
+  list-style: none;
 }
 
 p,
@@ -83,22 +83,24 @@ address,
 fieldset {
   margin-bottom: 20px;
 }
+
+
 /* links
 ----------------------------------------------------------------------------------------------------*/
 
 
 a:link,
-a:visited, #mission {
-	/* color = dark brown */
-	color:#574500;
+a:visited {
+		color:#000;  
 	text-decoration: none;
+	font-weight:600;
 }
 
 a:hover {
 	text-decoration: underline;
-	color:#404d18;
+	color: #5ee008; /* color = lime greenish */}
 }
-
-/* misc text
-----------------------------------------------------------------------------------------------------*/
-
+	
+#mission {
+			color:#574500;  /*color = dark brown */
+		text-decoration: none;}

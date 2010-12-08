@@ -24,7 +24,7 @@ h1#site-name {
 	background-image:url(../images/littleimagesforbanner.jpg);}	
 	
 #site-subheader, #footer {
-	background-image: url(../images/subbanner.png);}
+	background: url(../images/subbanner.png) no-repeat;}
 
 #site-subheader {height: 30px; 
 		padding-top: 5px;}
@@ -33,12 +33,12 @@ h1#site-name {
 
 	
 #sidebar-left	{padding-top:1.75em;
-		padding-bottom: 10em;
+		padding-bottom: 20em;
 		background-image: url(../images/subbanner2.jpg);}
 
 #page {background-color:#fff;}
 
-#main {padding-top: 1em;}
+#main {padding-top: 1em; background-color:#fff;}
 
 /*
 ** Formatting for administration page
