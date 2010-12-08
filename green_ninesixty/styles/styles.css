@@ -3,8 +3,11 @@
 h1#site-name {
   margin-bottom: 0;
 }
+#site-header {
+  margin-bottom: 1em;
+}
 
-#site-header,
+
 #site-subheader,
 #footer-region,
 .column,
@@ -13,6 +16,18 @@ h1#site-name {
 .block {
   margin-bottom: 1.5em;
 }
+
+#branding {height: 280px; 
+	background-image: url(../images/green_ninesixty_logo.jpg);}
+
+#site-subheader, #footer {
+	background-image: url(../images/subbanner.png);}
+
+#site-subheader {height: 30px; 
+		padding-top: 5px;}
+			
+
+#page {background-color:#fff;}
 
 /*
 ** Formatting for administration page
