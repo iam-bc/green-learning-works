@@ -15,11 +15,12 @@
 body {
   line-height: 135%;
 	font-family: Arial, Helvetica, sans-serif;
-	color: #1D2D45;
+	color: #000;
+	background-color: #404d18;
 }
 
 hr {
-  border-color: #ccc;
+  border-color: #6d6e70;
   border-style: solid;
   border-width: 1px 0 0;
   clear: both;
@@ -30,7 +31,8 @@ hr {
 ----------------------------------------------------------------------------------------------------*/
 
 h1 {
-  font-size: 25px;
+  font-size: 25px; 
+  color: #6d6e70;
 }
 
 h2 {
@@ -87,11 +89,12 @@ fieldset {
 
 a:link,
 a:visited {
-	/* color: see style css */
-	color: #819D26;
+	/* color = dark brown */
+	color:#574500;
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
+	color:#404d18;
 }
