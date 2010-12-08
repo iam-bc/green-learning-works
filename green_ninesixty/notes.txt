@@ -14,3 +14,22 @@ footer is kind of cool. left and right images specify the rounded edges of actua
                              
 framework: doesn't use grid system -- page is slightly smaller than 960. 
    main node takes up 11 grid. right column the remaining 5.
+   
+   
+____
+
+GWL banner/logo darker green: 2abd5b
+yellowish green: a6dd6e
+greenish yellow: d5ef78
+text: 1eba5a
+
+____
+
+iowa green energy site
+olive green bg: 404d18
+footer: 667927
+menu: 91b036
+
+___
+
+discover learning site.  all done with tables! how strange.
