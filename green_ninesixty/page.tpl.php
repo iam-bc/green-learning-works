@@ -18,16 +18,13 @@
      
     <div id="site-header" class="clear-block">
       <div id="branding" class="grid-16 clear-block">
-       <div id="imagesforheader" class="column grid-8 prefix-1"></div>
-       <!--images for header: define new content type to make this easier for client? or use random image print? -->
-           <div id="mission" class="column grid-6 push-1 clear-block">
-                print service links above  mission statement about 100px?
-                <br/><br/><br/>
-                <br/><br/><br/>
+         <!-- removed site name, logo, and slogan from branding, inserted mission to print over logo-->
+           <div id="mission" class="column grid-6 push-9 clear-block">
                 <?php print variable_get('site_mission', '');?>
             </div>
-   <!-- removed site name, logo, and slogan from branding, inserted mission to print over logo-->
-     
+            <div id="imagesforheader" class="grid-15 prefix-1 alpha "></div>
+             <!--images for header: define new content type to make this easier for client? or use random image print? -->
+ 
       </div>
 
 
