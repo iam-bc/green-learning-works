@@ -9,12 +9,12 @@ h1#site-name {
 
 #footer-region,
 .column,
-.node,
 .comment,
-#main-content
  {
   margin-bottom: 1.5em;
 }
+
+.node {padding-bottom:25px;}
 
 #branding {height: 280px; 
 	background: url(../images/green_ninesixty_logo.jpg) no-repeat;}
@@ -24,8 +24,12 @@ h1#site-name {
 	 margin-top: 170px; 
 	background-image:url(../images/littleimagesforbanner.jpg);}	
 	
-#site-subheader, #footer {
+#site-subheader {
 	background: url(../images/subbanner.png) no-repeat;}
+
+#footer {
+	background: url(../images/subbanner3.png) no-repeat;}
+	/* footer & subheader extended beyond the grid, but no-repeat keeps image to 960 */
 
 #site-subheader {height: 30px; 
 		padding-top: 5px;}
@@ -42,6 +46,8 @@ h1#site-name {
 #main {padding-top: 1em; 
 	background-color:#fff; 
 	text-align: justify;}
+	
+.block {padding-bottom:10px;}	
 
 /*
 ** Formatting for administration page
