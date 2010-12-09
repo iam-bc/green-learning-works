@@ -50,7 +50,7 @@
     <div id="main" class="column <?php print ns('grid-16', $left, 5, $right, 3) . ' ' . ns('push-5', !$left, 5); ?>">
     <!--  <?php print $breadcrumb; ?> -->
       <?php if ($title): ?>
-        <h1 class="title" id="page-title"><?php print $title; ?></h1>
+        <h1 class="title prefix-1" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php if ($tabs): ?>
         <div class="tabs"><?php print $tabs; ?></div>
@@ -67,7 +67,7 @@
 
   <?php if ($left): ?>
     <div id="sidebar-left" class="alpha column sidebar region grid-3 prefix-1 suffix-1 <?php print ns('pull-11', $right, 3); ?>">
-      <?php print $left; ?>
+     <?php print $left; ?>
     </div>
   <?php endif; ?>
 
