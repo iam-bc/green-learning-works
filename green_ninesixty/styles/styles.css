@@ -4,7 +4,7 @@ h1#site-name {
   margin-bottom: 0;
 }
 #site-header {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 #footer-region,
@@ -16,28 +16,24 @@ h1#site-name {
 
 .node {padding-bottom:25px;}
 
-#branding {height: 280px; 
+#branding {height: 140px; 
 	background: url(../images/green_ninesixty_logo.jpg) no-repeat;}
 
-#imagesforheader {height: 100px; 
-	 margin-top: 70px; 
-	background-image:url(../images/littleimagesforbanner2.jpg);}	
-	
 #site-subheader {
-	background: url(../images/subbanner.png) no-repeat;}
-
+	background: url(../images/littleimagesforbanner2.jpg) no-repeat;
+	height: 90px; 
+			padding-top: 20px;
+			padding-bottom:5px;}
+			
 #footer {
-	background: url(../images/subbanner3.png) no-repeat;}
+	background: url(../images/footerimage.jpg) no-repeat;}
 	/* footer & subheader extended beyond the grid, but no-repeat keeps image to 960 */
-
-#site-subheader {height: 30px; 
-		padding-top: 5px;}
 
 #mission {padding-top: 30px;}		
 
 #sidebar-left	{padding-top:1.75em;
 		padding-bottom: 20em;
-		background-image: url(../images/subbanner2.jpg);}
+		background-image: url(../images/border2.jpg);}
 
 #page {background-color:#fff;}
 
