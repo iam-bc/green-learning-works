@@ -35,11 +35,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 ol, ul {
   list-style: none;
 }
-.item-list ul li{
-    list-style: none;
-    margin-left: -10px;
-    padding: 0;
-}
+
 li.leaf {list-style:none;}
 
 blockquote, q {
