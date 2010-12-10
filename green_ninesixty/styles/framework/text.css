@@ -13,10 +13,11 @@
 ----------------------------------------------------------------------------------------------------*/
 
 body {
-  line-height: 135%;
+  line-height: 145%;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #000;
 	background-color: #404d18;
+	letter-spacing: 1px;
 }
 
 hr {
@@ -59,11 +60,11 @@ h6 {
 ----------------------------------------------------------------------------------------------------*/
 
 ol {
-  list-style: none;
+  list-style: none none;
 }
 
 ul {
-  list-style: none;
+  list-style: none none;
 }
 
 p,
@@ -91,16 +92,30 @@ fieldset {
 
 a:link,
 a:visited {
-		color:#000;  
+	color:			#000;  
 	text-decoration: none;
-	font-weight:600;
+	font-weight:	600;
 }
 
 a:hover {
 	text-decoration: underline;
-	color: #5ee008; /* color = lime greenish */}
+	color: 			#5ee008; /* color = lime greenish */}
 }
 	
 #mission {
-			color:#574500;  /*color = dark brown */
-		text-decoration: none;}
+	color:#574500;  /*color = dark brown */
+	text-decoration: none;}
+	
+#navlist a {
+	background-color:rgba(255, 255, 255, .5);
+	display: block;
+	padding: 3px 10px;
+   	margin:0;
+		}
+		
+#navlist li {
+	float: left;
+	padding:0;
+	margin:0;
+
+	}
