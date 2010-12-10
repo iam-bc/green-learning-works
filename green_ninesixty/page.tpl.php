@@ -27,17 +27,14 @@
  
       </div>
 
-
     <?php if ($search_box): ?>
       <div id="search-box" class="grid-6 prefix-10"><?php print $search_box; ?></div>
     <?php endif; ?>
     </div>
 
-
     <div id="site-subheader" class="prefix-1 suffix-1 clear-block">
          <div id="links"> <?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?></div> 
             <!-- links added to header -->
-
 
     <?php if ($header): ?>
       <div id="header-region" class="region <?php print ns('grid-14', $mission, 7); ?> clear-block">
@@ -45,7 +42,6 @@
       </div>
     <?php endif; ?>
     </div>
-
 
     <div id="main" class="column <?php print ns('grid-16', $left, 5, $right, 3) . ' ' . ns('push-5', !$left, 5); ?>">
     <!--  <?php print $breadcrumb; ?> -->
@@ -82,7 +78,7 @@
    
     <br/>
         <span class="grid-4"><?php print $footer; ?></span>
-        <span class="grid-4 push-9"><?php print $footer_message; ?></span>
+        <span class="grid-6 push-9">your content/copyright<?php print $footer_message; ?></span>
      
   
   </div>
