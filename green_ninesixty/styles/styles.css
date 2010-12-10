@@ -1,29 +1,25 @@
 /* $Id: styles.css,v 1.1 2009/01/31 21:28:46 dvessel Exp $ */
 
-h1#site-name {
-  margin-bottom: 0;
-}
-#site-header {
-  margin-bottom: .5em;
-}
+h1#site-name { margin-bottom: 0;}
+
+#site-header { margin-bottom: .5em;}
 
 #footer-region,
 .column,
-.comment,
- {
-  margin-bottom: 1.5em;
-}
+.comment { margin-bottom: 1.5em;}
 
-.node {padding-bottom:25px;}
-
-#branding {height: 140px; 
-	background: url(../images/green_ninesixty_logo.jpg) no-repeat;}
+#branding {
+	height: 	140px; 
+	background: url(../images/mediumguy.jpg) no-repeat;
+	}
 
 #site-subheader {
 	background: url(../images/littleimagesforbanner2.jpg) no-repeat;
-	height: 90px; 
-			padding-top: 20px;
-			padding-bottom:5px;}
+	height: 		90px; 
+	padding-top: 	20px;
+	padding-bottom:	5px;
+	margin-bottom: 	10p;
+	}
 			
 #footer {
 	background: url(../images/footerimage.jpg) no-repeat;}
@@ -31,16 +27,21 @@ h1#site-name {
 
 #mission {padding-top: 30px;}		
 
-#sidebar-right	{padding-top:1.75em;
-		padding-bottom: 20em;}
+#sidebar-right	{
+	padding-top:	1.75em;
+	padding-bottom: 20em;
+	}
 
-#page {background-color:#fff;}
+#page {background-color: #fff;}
 
-#main {padding-top: 1em; 
-	background-color:#fff; 
-	text-align: justify;}
+#main {
+	padding-top: 		1em; 
+	background-color:	#fff; 
+	text-align: 		justify;}
 	
-.block {padding-bottom:10px;}	
+.block {padding-bottom: 10px;}	
+
+.node {padding-bottom: 25px;}
 
 /*
 ** Formatting for administration page
