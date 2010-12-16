@@ -99,7 +99,7 @@ a:visited {
 
 a:hover {
 	text-decoration: underline;
-	color: 			#5ee008; /* color = lime greenish */}
+	color: 		#93b020; /* color = lime greenish */}
 }
 	
 #mission {
@@ -107,7 +107,7 @@ a:hover {
 	text-decoration: none;}
 	
 #navlist a {
-	background-color:rgba(255, 255, 255, .5);
+/*	background-color:rgba(255, 255, 255, .5);*/
 	display: block;
 	padding: 3px 20px;
    	margin:0;
@@ -115,7 +115,11 @@ a:hover {
 		
 #navlist li {
 	float: left;
-	padding:0;
 	margin:0;
 
 	}
+#links {padding-top:120px;}	
+
+#subtitle, #subtitle1 {
+		color:	#93b020; 
+			}

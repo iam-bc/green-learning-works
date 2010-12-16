@@ -5,12 +5,11 @@ h1#site-name { margin-bottom: 0;}
 #site-header { margin-bottom: .5em;}
 
 #footer-region,
-.column,
 .comment { margin-bottom: 1.5em;}
 
 #branding {
 	height: 	140px; 
-	background: url(../images/mediumguy.jpg) no-repeat;
+	background: url(../images/logoGLW.jpg) no-repeat;
 	}
 
 #site-subheader {
@@ -29,7 +28,6 @@ h1#site-name { margin-bottom: 0;}
 
 #sidebar-right	{
 	padding-top:	2.75em;
-	padding-bottom: 20em;
 	}
 
 #page {background-color: #fff;}
@@ -39,9 +37,8 @@ h1#site-name { margin-bottom: 0;}
 	background-color:	#fff; 
 	text-align: 		justify;}
 	
-.block {padding-bottom: 10px;}	
+#main-content {padding-bottom: 10px;}
 
-.node {padding-bottom: 25px;}
 
 /*
 ** Formatting for administration page
@@ -67,3 +64,26 @@ div.admin .right {
 div.admin .right .admin-panel {
   margin-left: 10px;
 }
+/*  copied from eldercare.... switch out images or rather put them into cck */
+
+#border1, #border2, #border3 {
+	word-spacing: .2px;
+	letter-spacing: .75px;	
+	padding-bottom:20px;
+	padding-top:0px;
+	}
+
+#border1 {
+	background: 
+	}
+
+#border2 {
+	background: 
+	}
+
+#border3 {
+	background: 
+}	
+	
+
+#sub {padding-bottom:0px;}		

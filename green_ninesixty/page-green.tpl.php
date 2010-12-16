@@ -32,7 +32,7 @@
  
       </div>
 
-   
+  
     </div>
 
     <div id="site-subheader" class="prefix-1 suffix-1 clear-block">
@@ -58,26 +58,49 @@
       <?php print $help; ?>
 
       <div id="main-content" class="region clear-block prefix-1 suffix-1">
-        <?php print $content; ?>
+        <?php print $node->content['body']['#value']; ?>
       </div>
 
       <?php print $feed_icons; ?>
     </div>
+    
+    <!-- <?php if ($left): ?>
+        <div id="sidebar-left" class="alpha column sidebar region grid-3 prefix-1 suffix-1 <?php print ns('pull-11', $right, 3); ?>">
+         <?php print $left; ?>
+        </div>
+      <?php endif; ?> -->
 
-  <?php if ($left): ?>
-    <div id="sidebar-left" class="alpha column sidebar region grid-3 prefix-1 suffix-1 <?php print ns('pull-11', $right, 3); ?>">
-     <?php print $left; ?>
-    </div>
-  <?php endif; ?>
+      <?php if ($right): ?>
+      
+        <div id="sidebar-right" class="column grid-3">
+              <?php print $service_links; ?>
+              <?php print $search_box; ?>
+              <br/>
+              <?php print $right; ?>
+        </div>
+      <?php endif; ?> 
 
-  <?php if ($right): ?>
-    <div id="sidebar-right" class="column sidebar region grid-3">
-      <?php print $right; ?>
-    </div>
-  <?php endif; ?>
+    
 
+      <div class="grid-15 push-1 clear-block alpha">
+         <div id="border1" class="grid-4"> 
+              <h4 id="subtitle">
+                <?php print $node->content['field_who']['field']['#title'] ?> </h4>
+                        <?php echo $node->field_who[0]['view'];?> </div>
+         <div id="border2" class="grid-4">
+            <h4 id="subtitle">
+              <?php print $node->content['field_what']['field']['#title'] ?> </h4>
+                       <?php echo $node->field_what[0]['view'];?></div>
+         <div id="border3" class="grid-4">
+            <h4 id="subtitle">
+             <?php print $node->content['field_touch']['field']['#title'] ?> </h4>
+                 <?php echo $node->field_touch[0]['view'];?></div
 
-  
+       </div>
+       
+ 
+ 
+
   <div id="footer" class="clear-block grid-16 suffix-1 alpha">
    
     <br/>

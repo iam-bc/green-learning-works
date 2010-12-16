@@ -1,6 +1,25 @@
 <?php
 // $Id: template.php,v 1.1.2.3 2009/07/18 17:48:55 dvessel Exp $
 
+function phptemplate_engine_preprocess_page(&$variables) {
+  $alias = drupal_get_path_alias($_GET['q']);
+  if ($alias != $_GET['q']) {
+    $template_filename = 'page';
+    foreach (explode('/', $alias) as $path_part) {
+      $template_filename = $template_filename . '-' . $path_part;
+      $variables['template_files'][] = $template_filename;
+    }
+  }
+}
+
+
+function phptemplate_preprocess_page(&$vars)
+{
+    if(module_exists('service_links')) {
+        $vars['service_links'] = theme('links', service_links_render($vars['node'], TRUE));
+    }
+}
+
 
 /**
  * Preprocessor for page.tpl.php template file.
