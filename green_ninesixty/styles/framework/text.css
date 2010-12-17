@@ -109,15 +109,15 @@ a:hover {
 #navlist a {
 /*	background-color:rgba(255, 255, 255, .5);*/
 	display: block;
-	padding: 3px 20px;
+	padding: 3px 5px 3px 0px;
    	margin:0;
 		}
 		
 #navlist li {
 	float: left;
-	margin:0;
-
-	}
+	margin:0px;
+	}	
+	
 #links {padding-top:120px;}	
 
 #subtitle, #subtitle1 {

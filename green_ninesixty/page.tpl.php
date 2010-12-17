@@ -21,8 +21,8 @@
          <!-- removed site name, logo, and slogan from branding, inserted mission to print over logo-->
          
             
-    <div id="links" class="grid-12"> <?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?></div>
-             <div id="mission" class="grid-3">
+    <div id="links" class="grid-10 prefix-1 alpha"> <?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?></div>
+             <div id="mission" class="grid-4">
                       <?php print variable_get('site_mission', '');?>
                   </div>
                  
@@ -71,8 +71,12 @@
   <?php endif; ?>
 
   <?php if ($right): ?>
-    <div id="sidebar-right" class="column sidebar region grid-3">
-      <?php print $right; ?>
+  
+    <div id="sidebar-right" class="column grid-3">
+          <?php print $service_links; ?>
+          <?php print $search_box; ?>
+          <br/>
+          <?php print $right; ?>
     </div>
   <?php endif; ?>
 
