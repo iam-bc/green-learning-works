@@ -8,29 +8,36 @@ h1#site-name { margin-bottom: 0;}
 .comment { margin-bottom: 1.5em;}
 
 #branding {
-	height: 	140px; 
-	background: url(../images/logoGLW.jpg) no-repeat;
+	height: 	20px; 
+	/* height was 40;
+	
+	background: url(../images/logoGLW.jpg) no-repeat;*/
 	
 	}
 
 #site-subheader {
-	background: url(../images/littleimagesforbanner2.jpg) no-repeat;
-	height: 		90px; 
+	background: url(../images/glwbanner.png) no-repeat;
+	height: 		105px; 
 	padding-top: 	20px;
 	padding-bottom:	5px;
 	margin-bottom: 	10px;
 	border-top: 1px solid #000;
 	}
+	
+#search {color:#fff; font-size:10px;}		
 			
 #footer {
 	background: url(../images/footerimage.jpg) no-repeat;}
 	/* footer & subheader extended beyond the grid, but no-repeat keeps image to 960 */
 
-#mission {padding-top: 30px;}		
+#mission {
+/*	background-color:rgba(255, 255, 255, .4);*/
+	margin-top: 20px;}		
 
 #sidebar-right	{
-	padding-top:	2.75em;
+	padding-top:	.5em;
 	}
+#service{padding-top:5px;}	
 
 #page {background-color: #fff;}
 

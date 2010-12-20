@@ -21,11 +21,12 @@
          <!-- removed site name, logo, and slogan from branding, inserted mission to print over logo-->
          
             
-    <div id="links" class="grid-10 prefix-1 alpha"> <?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?></div>
-             <div id="mission" class="grid-4">
-                      <?php print variable_get('site_mission', '');?>
-                  </div>
-                 
+          <div id="links" class="grid-10 prefix-1 alpha"><?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?>   </div><div id="service" class="grid-4 push-1">    <?php print $service_links; ?> </div>
+
+                   <div id="mission" class="clear-block grid-4">
+                            <?php print variable_get('site_mission', '');?>
+                        </div>
+ 
                      
             <div id="imagesforheader" class="grid-15 prefix-1 alpha "></div>
              <!--images for header: define new content type to make this easier for client? or use random image print? -->
@@ -70,15 +71,14 @@
     </div>
   <?php endif; ?>
 
-  <?php if ($right): ?>
-  
-    <div id="sidebar-right" class="column grid-3">
-          <?php print $service_links; ?>
-          <?php print $search_box; ?>
-          <br/>
-          <?php print $right; ?>
-    </div>
-  <?php endif; ?>
+   <?php if ($right): ?>
+     <div id="search"> <?php print $search_box; ?></div>
+       <div id="sidebar-right" class="column grid-3">
+            
+             <br/>
+             <?php print $right; ?>
+       </div>
+     <?php endif; ?>
 
 
   

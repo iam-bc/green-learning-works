@@ -118,7 +118,8 @@ a:hover {
 	margin:0px;
 	}	
 	
-#links {padding-top:120px;}	
+#links {padding-top:5px;}	
+/* was 120 from top*/
 
 #subtitle, #subtitle1 {
 		color:	#93b020; 
