@@ -82,17 +82,8 @@ div.admin .right .admin-panel {
 	padding-top:0px;
 	}
 
-#border1 {
-	background: 
-	}
-
-#border2 {
-	background: 
-	}
-
-#border3 {
-	background: 
-}	
+#border {text-align:justify;
+		padding-bottom:25px;}
 
 #sub {padding-bottom:0px;}		
 
