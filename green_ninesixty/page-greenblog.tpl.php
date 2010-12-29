@@ -14,28 +14,39 @@
 
 <body>
    <!-- class="<?php print $body_classes; ?> show-grid" -->
-   <div id="page" class="container-16 clear-block">
+  <div id="page" class="container-16 clear-block">
+     
+    <div id="site-header" class="clear-block">
+      <div id="branding" class="grid-16 clear-block">
+         <!-- removed site name, logo, and slogan from branding, inserted mission to print over logo-->
+         
+            
+          <div id="links" class="grid-10 prefix-1 alpha"><?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?>   </div><div id="service" class="grid-4 push-1">    <?php print $service_links; ?> </div>
 
-       <div id="site-header" class="clear-block">
-         <div id="branding" class="grid-16 clear-block">
-            <!-- removed site name, logo, and slogan from branding, inserted mission to print over logo-->
-               <div id="mission" class="clear-block grid-4 push-11">
-                         <?php print variable_get('site_mission', '');?>
-                     </div></div>
+                   <div id="mission" class="clear-block grid-4">
+                            <?php print variable_get('site_mission', '');?>
+                        </div>
+ 
+                     
+            <div id="imagesforheader" class="grid-15 prefix-1 alpha "></div>
+             <!--images for header: define new content type to make this easier for client? or use random image print? -->
+ 
+      </div>
 
-             <div id="links" class="grid-11 clear-block"><?php print theme('links', $primary_links, array('class' => 'links', 'id' => 'navlist')) ?>   </div>
+   
+    </div>
 
+    <div id="site-subheader" class="prefix-1 suffix-1 clear-block">
+       
+            <!-- links added to header -->
 
-                <div id="service" class="grid-4 push-1">    <?php print $service_links; ?> 
+    <?php if ($header): ?>
+      <div id="header-region" class="region <?php print ns('grid-14', $mission, 7); ?> clear-block">
+        <?php print $header; ?>
+      </div>
+    <?php endif; ?>
+    </div>
 
-
-               <div id="imagesforheader" class="grid-15 prefix-1 alpha "></div>
-                <!--images for header: define new content type to make this easier for client? or use random image print? -->
-
-         </div>
-
-       </div>
-  
     <div id="main" class="column <?php print ns('grid-16', $left, 5, $right, 3) . ' ' . ns('push-5', !$left, 5); ?>">
     <!--  <?php print $breadcrumb; ?> -->
       <?php if ($title): ?>
@@ -49,21 +60,22 @@
 
   
       <div id="main-content" class="grid-13 alpha push-1">
-        <?php print $node->content['body']['#value']; ?>
+         
+       <?php print $content; ?>
       </div>
 
       <?php print $feed_icons; ?>
     </div>
     
     <div id="sidebar-right" class="grid-3">
-       <!-- <div id="search"> <?php print $search_box; ?></div> -->
+      <div id="search"> <?php print $search_box; ?></div>
            
       </div>
   
   
 
 
-     
+<!--      
      <div class="grid-16 push-1 clear-block alpha">
         <div id="linkimage" class="grid-4">
             <?php echo $node->field_imagea[0]['view'];?></div>
@@ -83,7 +95,7 @@
              <h4 id="subtitle">Training Trainers </h4>
                <?php echo $node->field_touch[0]['view'];?></div>
 
-      </div>
+      </div> -->
 
 
   

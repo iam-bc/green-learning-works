@@ -2,26 +2,27 @@
 
 h1#site-name { margin-bottom: 0;}
 
-#site-header { margin-bottom: .5em;}
+#site-header { margin-bottom: .5em;
+	background: url(../images/blacklogo2.png) no-repeat;
+	height: 		405px;}
 
 #footer-region,
 .comment { margin-bottom: 1.5em;}
 
-#branding {
-	height: 	20px; 
+#branding { height:0px;
+
 	/* height was 40;
 	
 	background: url(../images/logoGLW.jpg) no-repeat;*/
 	
 	}
 
+
 #site-subheader {
-	background: url(../images/glwbanner.png) no-repeat;
-	height: 		105px; 
 	padding-top: 	20px;
 	padding-bottom:	5px;
 	margin-bottom: 	10px;
-	border-top: 1px solid #000;
+
 	}
 	
 #search {color:#fff; font-size:10px;}		
@@ -31,23 +32,28 @@ h1#site-name { margin-bottom: 0;}
 	/* footer & subheader extended beyond the grid, but no-repeat keeps image to 960 */
 
 #mission {
-/*	background-color:rgba(255, 255, 255, .4);*/
-	margin-top: 20px;}		
+	margin-top: 15px;
+	color:#fff;}		
 
 #sidebar-right	{
 	padding-top:	.5em;
 	}
-#service{padding-top:5px;}	
+#service, #links{padding-top:340px;}	
 
 #page {background-color: #fff;}
 
 #main {
-	padding-top: 		2.75em;
+	padding-top: 		2.2em;
 	background-color:	#fff; 
 	text-align: 		justify;}
 	
-#main-content {padding-bottom: 10px;}
+#main-content{padding-bottom: 10px;}
 
+.more {padding-top: 0px;
+		float:right;
+		font-size:10px;}
+	
+		
 
 /*
 ** Formatting for administration page
@@ -85,5 +91,7 @@ div.admin .right .admin-panel {
 #border {text-align:justify;
 		padding-bottom:25px;}
 
-#sub {padding-bottom:0px;}		
+#sub {padding-bottom:0px;}	
+
+	
 

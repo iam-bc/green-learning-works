@@ -87,6 +87,7 @@ fieldset {
 }
 
 
+
 /* links
 ----------------------------------------------------------------------------------------------------*/
 
@@ -104,23 +105,21 @@ a:hover {
 }
 	
 #mission {
-	color:#574500;  /*color = dark brown */
+	color:#fff;  
 	text-decoration: none;}
 	
 #navlist a {
-/*	background-color:rgba(255, 255, 255, .5);*/
+	color:#fff;
 	display: block;
 	padding: 3px 5px 3px 0px;
-   	margin:0;
+	font-weight:400;
 		}
 		
 #navlist li {
 	float: left;
 	margin:0px;
 	}	
-	
-#links {padding-top:5px;}	
-/* was 120 from top*/
+
 
 #subtitle, #subtitle1 {
 		color:	#93b020; 
